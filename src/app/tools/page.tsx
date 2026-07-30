@@ -3,7 +3,9 @@ import Header from "@/components/Header";
 import {
   BinocularsIcon,
   BookOpenTextIcon,
+  LinkIcon,
   LoaderPinwheelIcon,
+  StarIcon,
   TelescopeIcon,
   TextSearchIcon,
 } from "lucide-react";
@@ -161,6 +163,36 @@ export default function ToolsPage() {
                 </span>
                 <span className="mt-1 text-sm leading-tight text-pretty text-black/60 md:text-base">
                   Get the keywords that a domain or page ranks for.
+                </span>
+              </div>
+            </Link>
+          </div>
+          <div className="mt-8 flex items-center gap-2 text-xl font-medium md:text-2xl">
+            <div className="flex items-center gap-2 rounded-md border bg-sky-950 p-2 text-white md:p-3">
+              <LinkIcon size={24} />
+            </div>
+            <span>Backlink Research</span>
+          </div>
+          <div className="mt-4 grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+            <Link
+              href="/tool/backlink-research/bulk-dr-checker"
+              className={`group relative flex h-full flex-row items-center rounded-md border-2 border-slate-200 text-lg font-medium transition hover:bg-slate-50 active:scale-95 active:duration-75`}
+            >
+              <span className="absolute top-0 right-0 rounded-bl-md bg-sky-950/10 px-2 py-1 text-sm leading-none font-medium text-sky-950">
+                FREE
+              </span>
+              <div
+                className={`flex h-full items-center justify-center px-4 md:px-5`}
+              >
+                <StarIcon size={24} className="text-black/80 md:hidden" />
+                <StarIcon size={46} className="hidden text-black/80 md:block" />
+              </div>
+              <div className="flex flex-col py-4 pr-4">
+                <span className="text-lg text-black/80 md:text-xl">
+                  Bulk DR Checker
+                </span>
+                <span className="mt-1 text-sm leading-tight text-pretty text-black/60 md:text-base">
+                  Check Ahrefs domain rating for multiple domains at once.
                 </span>
               </div>
             </Link>

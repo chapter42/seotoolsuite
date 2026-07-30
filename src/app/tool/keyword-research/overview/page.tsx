@@ -16,6 +16,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+  robots: {
+    index: false,
+  },
 };
 
 export default function KeywordOverviewPage({

@@ -12,6 +12,9 @@ export const metadata: Metadata = {
       "The Ranked Keywords tool shows the keywords a domain or page ranks for in search results.",
     images: [{ url: "/assets/images/ranked-keywords-screenshot.png" }],
   },
+  robots: {
+    index: false,
+  },
 };
 
 export default function RankedKeywordsPage({

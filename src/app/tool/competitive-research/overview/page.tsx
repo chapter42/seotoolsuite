@@ -12,6 +12,9 @@ export const metadata: Metadata = {
       "The Traffic Overview tool analyzes a website’s organic and paid search performance.",
     images: [{ url: "/assets/images/traffic-overview-screenshot.png" }],
   },
+  robots: {
+    index: false,
+  },
 };
 
 export default function TrafficOverviewPage({

@@ -1,5 +1,17 @@
 # SEOToolSuite Changelog
 
+## v6.0.0
+
+- Added a new free "Bulk DR Checker" tool. Check Ahrefs DR for multiple websites at once for free.
+- Added pricing (cost calculator) page.
+- Added feature pages for each individual tool.
+- Added sitemap and robots.txt files.
+- Updated homepage.
+- Updated README.
+- SEO improvements.
+- Minor UI improvements and fixes.
+- Updated packages.
+
 ## v5.2.0
 
 - Added feature to refresh cached data on all tools.

@@ -2,15 +2,18 @@ import { Metadata } from "next";
 import KeywordAutocompleteTool from "@/tools/KeywordResearch/KeywordAutocomplete/";
 
 export const metadata: Metadata = {
-  title: "Keyword Autocomplete | SEOToolSuite",
+  title: "Keyword Autocomplete (Free) | SEOToolSuite",
   description:
-    "The Keyword Autocomplete tool generates long-tail keyword ideas using Google autocomplete data. ",
+    "The Keyword Autocomplete tool generates long-tail keyword ideas using Google autocomplete data for free.",
   openGraph: {
     type: "website",
-    title: "Keyword Autocomplete | SEOToolSuite",
+    title: "Keyword Autocomplete (Free) | SEOToolSuite",
     description:
-      "The Keyword Autocomplete tool generates long-tail keyword ideas using Google autocomplete data. ",
+      "The Keyword Autocomplete tool generates long-tail keyword ideas using Google autocomplete data for free.",
     images: [{ url: "/assets/images/keyword-autocomplete-screenshot.png" }],
+  },
+  robots: {
+    index: false,
   },
 };
 

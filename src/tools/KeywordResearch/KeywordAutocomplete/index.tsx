@@ -627,7 +627,19 @@ const KeywordAutocompleteTool = ({
               className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-slate-200 bg-white lg:scroll-m-8"
               id="keywords-table"
             >
-              <div className="header flex w-full items-center gap-2 border-b-2 border-slate-200 px-4 py-3 text-base md:text-lg">
+              <div className="header relative flex w-full items-center gap-2 border-b-2 border-slate-200 px-4 py-3 text-base md:text-lg">
+                {isLoading && (
+                  <div className="absolute top-0 left-0 z-20 w-full overflow-hidden rounded-t-md">
+                    <Progress
+                      aria-label="Keyword Autocomplete Progress"
+                      className="rounded-t-md"
+                      size="sm"
+                      radius="none"
+                      color="primary"
+                      value={keywordAutocompleteProgress}
+                    />
+                  </div>
+                )}
                 <LoaderPinwheelIcon size={20} />
                 <span>
                   Autocomplete Suggestions (

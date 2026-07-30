@@ -12,6 +12,9 @@ export const metadata: Metadata = {
       "The Keyword Suggestions tool generates a large list of relevant keyword ideas based on your seed keyword.",
     images: [{ url: "/assets/images/keyword-suggestions-screenshot.png" }],
   },
+  robots: {
+    index: false,
+  },
 };
 
 export default function KeywordSuggestionsPage({

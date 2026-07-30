@@ -1,8 +1,8 @@
 ![SEOToolSuite](docs/assets/logo.png)
 
-SEOToolSuite provides **open-source** SEO tools for everyone. Pay only for **what you use**, with **unrestricted access** to SEO data. Keyword research, competitive research, and more, **powered by DataForSEO**. An open-source alternative to **Ahrefs, SEMrush,** and others.
+SEOToolSuite provides **open-source** SEO tools for everyone. Pay only for **what you use**, with **unrestricted access** to SEO data. Keyword research, competitive research, and backlink research, **powered by DataForSEO**. An open-source alternative to **Ahrefs, SEMrush,** and others.
 
-[**Get Started**](https://seotoolsuite.nitishkgupta.com/tools) - [**Changelog**](CHANGELOG.md) - [**DataForSEO Account (Free 1$ Credits)**](https://dataforseo.com/?aff=44560) - [**Discord Server**](https://discord.gg/Wt4RN4Xy8n)
+[**Get Started**](https://seotoolsuite.nitishkgupta.com/tools) - [**Pricing (Cost Calculator)**](https://seotoolsuite.nitishkgupta.com/pricing) - [**Changelog**](CHANGELOG.md) - [**DataForSEO Account (Free 1$ Credits)**](https://dataforseo.com/?aff=44560) - [**Discord Server**](https://discord.gg/Wt4RN4Xy8n)
 
 [![GitHub Release](https://img.shields.io/github/v/release/nitishkgupta/seotoolsuite?style=for-the-badge)](https://github.com/nitishkgupta/seotoolsuite/releases) [![GitHub License](https://img.shields.io/github/license/nitishkgupta/seotoolsuite?style=for-the-badge)](LICENSE) [![GitHub deployments](https://img.shields.io/github/deployments/nitishkgupta/seotoolsuite/production?style=for-the-badge&label=Deployment)
 ](https://seotoolsuite.nitishkgupta.com)
@@ -31,7 +31,7 @@ Clean and responsive user interface for accessing data with meaningful charts.
 
 ### Completely Secured
 
-All API requests made from the browser. No backend required.
+All DataForSEO API requests made from the browser.
 
 ## 🔍 SEO Tools
 
@@ -76,6 +76,16 @@ The Traffic Overview tool analyzes a website’s organic and paid search perform
 The Ranked Keywords tool shows the keywords a domain or page ranks for in search results. It provides insights such as rankings, search volume, estimated traffic, CPC, competition, and keyword difficulty - helping you analyze competitor SEO performance and discover ranking opportunities.
 
 **- DataForSEO API Required.**
+
+### Backlink Research
+
+#### Bulk DR Checker
+
+![Bulk DR Checker Tool](docs/assets/bulk-dr-checker-screenshot.png)
+
+The Bulk DR Checker tool lets you check the Ahrefs Domain Rating (DR) of multiple domains in a single request. It's ideal for evaluating backlink prospects, analyzing competitors, and assessing domain authority at scale.
+
+**- Free To Use, No API Required.**
 
 ## 📋 Prerequisites
 
