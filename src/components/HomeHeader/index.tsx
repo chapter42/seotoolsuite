@@ -188,7 +188,7 @@ const HomeHeader = () => {
         <div className="header-right ml-auto h-fit">
           <Link
             href="/tools"
-            className="block rounded-md bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
+            className="block rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
           >
             Get Started
           </Link>

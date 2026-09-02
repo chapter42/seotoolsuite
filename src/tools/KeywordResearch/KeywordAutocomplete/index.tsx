@@ -52,11 +52,11 @@ type KeywordAutocompleteModifiers = KeywordAutocompleteModifier[];
 const KeywordAutocompleteTool = ({
   searchParams,
 }: {
-  searchParams?: Promise<{
+  searchParams?: {
     keyword?: string;
     location_code?: string;
     language_code?: string;
-  }>;
+  };
 }) => {
   const dataGridRef = useGridApiRef();
 
@@ -459,24 +459,24 @@ const KeywordAutocompleteTool = ({
 
   useEffect(() => {
     if (searchParams) {
-      searchParams.then(({ keyword, location_code, language_code }) => {
-        if (keyword && location_code && language_code) {
-          setSelectedKeyword(keyword);
-          setSelectedLocationKey(location_code);
-          setSelectedLanguageKey(language_code);
-          setFormInput({
-            keyword,
-            location_code,
-            language_code,
-          });
-        }
-      });
+      const { keyword, location_code, language_code } = searchParams;
+
+      if (keyword && location_code && language_code) {
+        setSelectedKeyword(keyword);
+        setSelectedLocationKey(location_code);
+        setSelectedLanguageKey(language_code);
+        setFormInput({
+          keyword,
+          location_code,
+          language_code,
+        });
+      }
     }
   }, [searchParams]);
 
   return (
     <div className="keyword-autocomplete-tool relative w-full px-4 py-4 lg:px-8 lg:py-8">
-      <div className="tool-form-container relative flex w-full flex-col items-start justify-start rounded-md border-2 border-slate-200 bg-white p-5">
+      <div className="tool-form-container relative flex w-full flex-col items-start justify-start rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
         {isLoading && (
           <div className="absolute top-0 left-0 z-20 w-full overflow-hidden rounded-t-md">
             <Progress
@@ -594,7 +594,7 @@ const KeywordAutocompleteTool = ({
             formInput.location_code &&
             formInput.language_code && (
               <div className="mt-4 w-full">
-                <div className="flex w-full flex-col flex-wrap items-start gap-2 rounded-md border border-slate-200 p-3 text-sm md:w-fit md:flex-row md:items-center">
+                <div className="flex w-full flex-col flex-wrap items-start gap-2 rounded-md border border-b-2 border-slate-200 p-3 text-sm md:w-fit md:flex-row md:items-center">
                   <div className="mr-1 flex items-center gap-1 border-slate-200 text-sm font-medium text-black/80 transition">
                     Other Reports:
                   </div>
@@ -624,7 +624,7 @@ const KeywordAutocompleteTool = ({
         <>
           <div className="tool-results-container mt-4 flex w-full flex-col gap-8 md:gap-4 lg:mt-8 lg:flex-row">
             <div
-              className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-slate-200 bg-white lg:scroll-m-8"
+              className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-b-3 border-slate-200 bg-white lg:scroll-m-8"
               id="keywords-table"
             >
               <div className="header relative flex w-full items-center gap-2 border-b-2 border-slate-200 px-4 py-3 text-base md:text-lg">

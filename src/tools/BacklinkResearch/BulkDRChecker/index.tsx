@@ -197,7 +197,7 @@ const BulkDRCheckerTool = () => {
 
   return (
     <div className="bulk-dr-checker-tool relative w-full px-4 py-4 lg:px-8 lg:py-8">
-      <div className="tool-form-container relative flex w-full flex-col items-start justify-start rounded-md border-2 border-slate-200 bg-white p-5">
+      <div className="tool-form-container relative flex w-full flex-col items-start justify-start rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
         {isLoading && (
           <div className="absolute top-0 left-0 z-20 w-full overflow-hidden rounded-t-md">
             <Progress
@@ -283,7 +283,7 @@ const BulkDRCheckerTool = () => {
         <>
           <div className="tool-results-container mt-4 flex w-full flex-col gap-8 md:gap-4 lg:mt-8 lg:flex-row">
             <div
-              className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-slate-200 bg-white lg:scroll-m-8"
+              className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-b-3 border-slate-200 bg-white lg:scroll-m-8"
               id="domain-ratings-table"
             >
               <div className="header relative flex w-full items-center gap-2 border-b-2 border-slate-200 px-4 py-3 text-base md:text-lg">

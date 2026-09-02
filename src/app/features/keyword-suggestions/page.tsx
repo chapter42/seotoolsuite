@@ -48,7 +48,7 @@ export default function KeywordSuggestionsFeaturePage() {
       {/* Hero Section */}
       <section className="hero w-full border-b-2 border-slate-200 bg-[url('/assets/images/papyrus.png')] bg-repeat px-4 lg:px-0">
         <div className="mx-auto flex w-full max-w-350 flex-col items-center pt-8 lg:pt-14">
-          <div className="flex items-center gap-2 rounded-full border-2 border-sky-950/20 bg-white/80 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-950 uppercase backdrop-blur-xs md:text-sm">
+          <div className="flex items-center gap-2 rounded-full border-2 border-b-3 border-sky-950/20 bg-white/80 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-950 uppercase backdrop-blur-xs md:text-sm">
             <TelescopeIcon size={18} className="text-sky-950" />
             KEYWORD RESEARCH
           </div>
@@ -69,40 +69,40 @@ export default function KeywordSuggestionsFeaturePage() {
 
         {/* Feature Badges */}
         <div className="mt-5 flex flex-wrap items-center justify-center gap-2 px-2 sm:px-4">
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <LightbulbIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               Massive Idea Generator
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <FilterIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               Advanced DataGrid Filtering
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <CircleQuestionMarkIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               Search Intent Badges
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <BadgeDollarSignIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               CPC & Bidding Rates
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <GaugeIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
@@ -115,7 +115,7 @@ export default function KeywordSuggestionsFeaturePage() {
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/tool/keyword-research/suggestions"
-            className="flex items-center gap-2 rounded-md border-2 border-sky-950 bg-sky-950 px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
+            className="flex items-center gap-2 rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
           >
             Access Keyword Suggestions
           </Link>
@@ -167,7 +167,7 @@ export default function KeywordSuggestionsFeaturePage() {
 
           <div className="mt-8 grid w-full grid-cols-1 items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {/* Feature 1 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -189,7 +189,7 @@ export default function KeywordSuggestionsFeaturePage() {
             </div>
 
             {/* Feature 2 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -212,7 +212,7 @@ export default function KeywordSuggestionsFeaturePage() {
             </div>
 
             {/* Feature 3 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -234,7 +234,7 @@ export default function KeywordSuggestionsFeaturePage() {
             </div>
 
             {/* Feature 4 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -256,7 +256,7 @@ export default function KeywordSuggestionsFeaturePage() {
             </div>
 
             {/* Feature 5 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -277,7 +277,7 @@ export default function KeywordSuggestionsFeaturePage() {
             </div>
 
             {/* Feature 6 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -312,7 +312,7 @@ export default function KeywordSuggestionsFeaturePage() {
           </p>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <WalletIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Pay-Per-Use Model</h3>
@@ -323,7 +323,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <InfinityIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Unrestricted Access</h3>
@@ -334,7 +334,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <DatabaseZapIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Cost-Saving Caching</h3>
@@ -345,7 +345,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <ScaleIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">100% Open Source</h3>
@@ -356,7 +356,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <LockIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">
@@ -369,7 +369,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <TrendingUpIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Global Database</h3>
@@ -394,7 +394,7 @@ export default function KeywordSuggestionsFeaturePage() {
           </p>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-6 md:grid-cols-3">
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 1
               </span>
@@ -407,7 +407,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 2
               </span>
@@ -420,7 +420,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 3
               </span>
@@ -446,7 +446,7 @@ export default function KeywordSuggestionsFeaturePage() {
           </div>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Do I need a DataForSEO API key for Keyword Suggestions?
               </h3>
@@ -456,7 +456,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 How many keyword suggestions are returned per search?
               </h3>
@@ -466,7 +466,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Can I filter suggestions by search volume and difficulty?
               </h3>
@@ -477,7 +477,7 @@ export default function KeywordSuggestionsFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Is data exportable to CSV/Excel?
               </h3>
@@ -510,7 +510,7 @@ export default function KeywordSuggestionsFeaturePage() {
             </Link>
             <Link
               href="/tools"
-              className="flex items-center gap-2 rounded-md border-2 border-slate-300 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:bg-white/10 active:scale-95"
+              className="flex items-center gap-2 rounded-md border-2 border-b-3 border-slate-300 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:bg-white/10 active:scale-95"
             >
               Explore All Tools
             </Link>

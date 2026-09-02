@@ -67,24 +67,24 @@ export default function HomePage() {
           </p>
         </div>
         <div className="mt-5 flex flex-wrap items-center justify-center gap-2 px-4">
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-2">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <TelescopeIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-sm font-medium text-sky-950 md:text-base">
               Keyword Research
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-2">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <BinocularsIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-sm font-medium text-sky-950 md:text-base">
               Competitive Research
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-2">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <LinkIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-sm font-medium text-sky-950 md:text-base">
@@ -95,14 +95,14 @@ export default function HomePage() {
         <div className="mt-6 flex items-center justify-center gap-3">
           <Link
             href="/tools"
-            className="flex items-center gap-1 rounded-md border-2 border-sky-950 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
+            className="flex items-center gap-1 rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
           >
             Get Started
           </Link>
           <Link
             href="https://github.com/nitishkgupta/seotoolsuite"
             target="_blank"
-            className="flex items-center gap-1 rounded-md border-2 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+            className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
           >
             <Image
               src="/assets/images/github-icon.svg"
@@ -147,7 +147,7 @@ export default function HomePage() {
             <b className="font-semibold">1$ credits</b>.
           </p>
           <div className="mt-6 grid w-full grid-cols-1 items-stretch justify-start gap-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
-            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
               <div className="flex w-full items-center gap-2 text-black/80">
                 <div className="rounded-md bg-sky-950 p-2.5 text-white">
                   <WalletIcon
@@ -164,7 +164,7 @@ export default function HomePage() {
                 hidden charges. Credits never expire.
               </div>
             </div>
-            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
               <div className="flex w-full items-center gap-2 text-black/80">
                 <div className="rounded-md bg-sky-950 p-2.5 text-white">
                   <InfinityIcon
@@ -181,7 +181,7 @@ export default function HomePage() {
                 rows you can access.
               </div>
             </div>
-            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
               <div className="flex w-full items-center gap-2 text-black/80">
                 <div className="rounded-md bg-sky-950 p-2.5 text-white">
                   <DatabaseZapIcon
@@ -197,7 +197,7 @@ export default function HomePage() {
                 Cache results to save costs and get faster responses.
               </div>
             </div>
-            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
               <div className="flex w-full items-center gap-2 text-black/80">
                 <div className="rounded-md bg-sky-950 p-2.5 text-white">
                   <ScaleIcon
@@ -213,7 +213,7 @@ export default function HomePage() {
                 Codebase completely open-sourced under the MIT license.
               </div>
             </div>
-            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
               <div className="flex w-full items-center gap-2 text-black/80">
                 <div className="rounded-md bg-sky-950 p-2.5 text-white">
                   <SmilePlusIcon
@@ -230,7 +230,7 @@ export default function HomePage() {
                 meaningful charts.
               </div>
             </div>
-            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
+            <div className="flex w-full flex-col items-start gap-3 rounded-md border-2 border-b-3 border-slate-200 p-3 transition hover:bg-slate-100 lg:p-5">
               <div className="flex w-full items-center gap-2 text-black/80">
                 <div className="rounded-md bg-sky-950 p-2.5 text-white">
                   <LockIcon
@@ -260,7 +260,7 @@ export default function HomePage() {
             it is one of the best openly available SEO data provider.
           </p>
           <div className="mt-6 grid w-full grid-cols-1 gap-2 lg:grid-cols-4 lg:gap-3">
-            <div className="flex flex-col rounded-md border-2 border-slate-200">
+            <div className="flex flex-col rounded-md border-2 border-b-3 border-slate-200">
               <div className="w-full border-b-2 border-slate-200 bg-slate-100 px-4 py-2 text-lg">
                 Google Keywords
               </div>
@@ -268,7 +268,7 @@ export default function HomePage() {
                 7,694,038,302
               </div>
             </div>
-            <div className="flex flex-col rounded-md border-2 border-slate-200">
+            <div className="flex flex-col rounded-md border-2 border-b-3 border-slate-200">
               <div className="w-full border-b-2 border-slate-200 bg-slate-100 px-4 py-2 text-lg">
                 Bing Keywords
               </div>
@@ -276,7 +276,7 @@ export default function HomePage() {
                 4,229,969,701
               </div>
             </div>
-            <div className="flex flex-col rounded-md border-2 border-slate-200">
+            <div className="flex flex-col rounded-md border-2 border-b-3 border-slate-200">
               <div className="w-full border-b-2 border-slate-200 bg-slate-100 px-4 py-2 text-lg">
                 Google SERPs
               </div>
@@ -284,7 +284,7 @@ export default function HomePage() {
                 592,764,792
               </div>
             </div>
-            <div className="flex flex-col rounded-md border-2 border-slate-200">
+            <div className="flex flex-col rounded-md border-2 border-b-3 border-slate-200">
               <div className="w-full border-b-2 border-slate-200 bg-slate-100 px-4 py-2 text-lg">
                 Bing SERPs
               </div>
@@ -325,19 +325,19 @@ export default function HomePage() {
               <div className="mt-0 flex items-center gap-3 p-2">
                 <Link
                   href="/tool/keyword-research/overview"
-                  className="block w-fit rounded-md bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
                 >
                   Access Tool
                 </Link>
                 <Link
                   href="/features/keyword-overview"
-                  className="flex items-center gap-1 rounded-md border-2 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
               <Image
                 src="/assets/images/keyword-overview-screenshot.png"
                 alt="Keyword Overview Tool"
@@ -389,19 +389,19 @@ export default function HomePage() {
               <div className="mt-0 flex items-center gap-3 p-2">
                 <Link
                   href="/tool/keyword-research/suggestions"
-                  className="block w-fit rounded-md bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
                 >
                   Access Tool
                 </Link>
                 <Link
                   href="/features/keyword-suggestions"
-                  className="flex items-center gap-1 rounded-md border-2 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
               <Image
                 src="/assets/images/keyword-suggestions-screenshot.png"
                 alt="Keyword Suggestions Tool"
@@ -452,19 +452,19 @@ export default function HomePage() {
               <div className="mt-0 flex items-center gap-3 p-2">
                 <Link
                   href="/tool/keyword-research/autocomplete"
-                  className="block w-fit rounded-md bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
                 >
                   Access Tool
                 </Link>
                 <Link
                   href="/features/keyword-autocomplete"
-                  className="flex items-center gap-1 rounded-md border-2 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
               <Image
                 src="/assets/images/keyword-autocomplete-screenshot.png"
                 alt="Keyword Autocomplete Tool"
@@ -526,19 +526,19 @@ export default function HomePage() {
               <div className="mt-0 flex items-center gap-3 p-2">
                 <Link
                   href="/tool/competitive-research/overview"
-                  className="block w-fit rounded-md bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
                 >
                   Access Tool
                 </Link>
                 <Link
                   href="/features/traffic-overview"
-                  className="flex items-center gap-1 rounded-md border-2 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
               <Image
                 src="/assets/images/traffic-overview-screenshot.png"
                 alt="Traffic Overview Tool"
@@ -590,19 +590,19 @@ export default function HomePage() {
               <div className="mt-0 flex items-center gap-3 p-2">
                 <Link
                   href="/tool/competitive-research/keywords"
-                  className="block w-fit rounded-md bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
                 >
                   Access Tool
                 </Link>
                 <Link
                   href="/features/ranked-keywords"
-                  className="flex items-center gap-1 rounded-md border-2 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
               <Image
                 src="/assets/images/ranked-keywords-screenshot.png"
                 alt="Ranked Keywords Tool"
@@ -663,19 +663,19 @@ export default function HomePage() {
               <div className="mt-0 flex items-center gap-3 p-2">
                 <Link
                   href="/tool/backlink-research/bulk-dr-checker"
-                  className="block w-fit rounded-md bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
+                  className="block w-fit rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-4 py-2 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-lg"
                 >
                   Access Tool
                 </Link>
                 <Link
                   href="/features/bulk-dr-checker"
-                  className="flex items-center gap-1 rounded-md border-2 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
+                  className="flex items-center gap-1 rounded-md border-2 border-b-3 border-sky-950 bg-white px-4 py-2 text-sm font-medium text-sky-950 transition hover:scale-105 active:scale-95 lg:text-base"
                 >
                   Learn More
                 </Link>
               </div>
             </div>
-            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
+            <div className="group relative order-1 mt-4 max-h-50 max-w-200 overflow-hidden rounded-md border-2 border-b-3 border-sky-950/10 bg-sky-950/5 p-4 lg:order-2 lg:max-h-100">
               <Image
                 src="/assets/images/bulk-dr-checker-screenshot.png"
                 alt="Bulk DR Checker Tool"

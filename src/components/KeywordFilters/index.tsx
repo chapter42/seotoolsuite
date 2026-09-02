@@ -50,7 +50,7 @@ const KeywordFilters = ({
   const [initialValuesState, setInitialValuesState] =
     useState<KeywordFiltersInitialValues>(initialValues);
   return (
-    <div className="keyword-filters flex flex-col items-start justify-start rounded-md border-2 border-slate-200">
+    <div className="keyword-filters flex flex-col items-start justify-start rounded-md border-2 border-b-3 border-slate-200">
       <div
         className={`flex w-full items-center justify-between gap-1 rounded-t-md border-slate-200 py-2 pr-2 pl-4 text-base ${filtersVisible ? "border-b-2" : ""}`}
       >
@@ -97,7 +97,7 @@ const KeywordFilters = ({
                 <NumberInput
                   name="searchVolume-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -116,7 +116,7 @@ const KeywordFilters = ({
                 <NumberInput
                   name="searchVolume-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -142,7 +142,7 @@ const KeywordFilters = ({
                 <NumberInput
                   name="kd-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -161,7 +161,7 @@ const KeywordFilters = ({
                 <NumberInput
                   name="kd-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -181,7 +181,7 @@ const KeywordFilters = ({
               <div className="mt-2 flex flex-row flex-wrap items-center gap-2 lg:gap-1">
                 <Tooltip content="Very Easy">
                   <Button
-                    className="border border-[#1ba005] bg-transparent px-2 text-xs font-semibold text-[#1ba005] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#1ba005] bg-transparent px-2 text-xs font-semibold text-[#1ba005] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -197,7 +197,7 @@ const KeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Easy">
                   <Button
-                    className="border border-[#AADA2B] bg-transparent px-2 text-xs font-semibold text-[#AADA2B] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#AADA2B] bg-transparent px-2 text-xs font-semibold text-[#AADA2B] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -213,7 +213,7 @@ const KeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Medium">
                   <Button
-                    className="border border-[#ffbe02] bg-transparent px-2 text-xs font-semibold text-[#ffbe02] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#ffbe02] bg-transparent px-2 text-xs font-semibold text-[#ffbe02] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -229,7 +229,7 @@ const KeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Hard">
                   <Button
-                    className="border border-[#ef7a24] bg-transparent px-2 text-xs font-semibold text-[#ef7a24] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#ef7a24] bg-transparent px-2 text-xs font-semibold text-[#ef7a24] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -245,7 +245,7 @@ const KeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Very Hard">
                   <Button
-                    className="border border-[#bd462e] bg-transparent px-2 text-xs font-semibold text-[#bd462e] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#bd462e] bg-transparent px-2 text-xs font-semibold text-[#bd462e] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -261,7 +261,7 @@ const KeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Extremely Hard">
                   <Button
-                    className="border border-[red] bg-transparent px-2 text-xs font-semibold text-[red] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[red] bg-transparent px-2 text-xs font-semibold text-[red] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -288,7 +288,7 @@ const KeywordFilters = ({
                 <NumberInput
                   name="cpc-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   startContent={
                     <div className="pointer-events-none flex items-center">
@@ -312,7 +312,7 @@ const KeywordFilters = ({
                 <NumberInput
                   name="cpc-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   startContent={
                     <div className="pointer-events-none flex items-center">
@@ -343,7 +343,7 @@ const KeywordFilters = ({
                 <NumberInput
                   name="ppc-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -362,7 +362,7 @@ const KeywordFilters = ({
                 <NumberInput
                   name="ppc-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -392,7 +392,7 @@ const KeywordFilters = ({
                   name="includeKeyword"
                   variant="bordered"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   radius="sm"
                   type="text"
@@ -417,7 +417,7 @@ const KeywordFilters = ({
                   name="excludeKeyword"
                   variant="bordered"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   radius="sm"
                   type="text"

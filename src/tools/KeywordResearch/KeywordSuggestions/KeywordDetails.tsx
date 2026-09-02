@@ -63,6 +63,19 @@ const KeywordDetails = ({
 }: {
   keywordData: KeywordSuggestionItem | null;
 }) => {
+  const avgPageRank =
+    typeof keywordData?.avgBacklinksData?.pageRank === "number"
+      ? Math.round(
+          Math.sin(keywordData.avgBacklinksData.pageRank / 636.62) * 100,
+        )
+      : null;
+  const avgDomainRank =
+    typeof keywordData?.avgBacklinksData?.domainRank === "number"
+      ? Math.round(
+          Math.sin(keywordData.avgBacklinksData.domainRank / 636.62) * 100,
+        )
+      : null;
+
   return keywordData ? (
     <>
       <div className="flex w-full flex-wrap items-center gap-2 border-b-2 border-slate-200 bg-white p-4">
@@ -86,7 +99,7 @@ const KeywordDetails = ({
         </div>
       </div>
       <div className="flex w-full flex-col gap-4 p-4">
-        <div className="rounded-md border-2 border-slate-200 bg-white">
+        <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white">
           <div className="flex flex-row items-center gap-2 border-b-2 border-slate-200 px-4 py-3">
             <Gauge size={20} />
             <span className="text-base md:text-lg">SEO Difficulty</span>
@@ -115,7 +128,7 @@ const KeywordDetails = ({
                   </span>
                 </div>
                 <div
-                  className="rounded-b-md border border-t-0 border-slate-200 px-4 py-1.5 text-center"
+                  className="rounded-b-md border border-t-0 border-b-2 border-slate-200 px-4 py-1.5 text-center"
                   style={{
                     borderColor: getDifficultyColor(
                       keywordData.keywordDifficulty,
@@ -138,14 +151,14 @@ const KeywordDetails = ({
           </div>
         </div>
         <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="w-full rounded-md border-2 border-slate-200 bg-white">
+          <div className="w-full rounded-md border-2 border-b-3 border-slate-200 bg-white">
             <div className="flex flex-row items-center gap-2 border-b-2 border-slate-200 px-4 py-3">
               <TrendingUp size={20} />
               <span className="text-base">Volume</span>
             </div>
             <div className="flex items-center gap-1 overflow-auto p-4">
               {typeof keywordData.searchVolume === "number" ? (
-                <span className="min-h-[26px]">
+                <span className="min-h-6.5">
                   {keywordData.searchVolume.toLocaleString(navigator.language)}
                 </span>
               ) : (
@@ -168,7 +181,7 @@ const KeywordDetails = ({
               )}
             </div>
           </div>
-          <div className="w-full rounded-md border-2 border-slate-200 bg-white">
+          <div className="w-full rounded-md border-2 border-b-3 border-slate-200 bg-white">
             <div className="flex flex-row items-center gap-2 border-b-2 border-slate-200 px-4 py-3">
               <BadgeQuestionMark size={20} />
               <span className="text-base">Intent</span>
@@ -246,7 +259,7 @@ const KeywordDetails = ({
           </div>
         </div>
         <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-          <div className="w-full rounded-md border-2 border-slate-200 bg-white">
+          <div className="w-full rounded-md border-2 border-b-3 border-slate-200 bg-white">
             <div className="flex flex-row items-center gap-2 border-b-2 border-slate-200 px-4 py-3">
               <BadgeDollarSignIcon size={20} />
               <span className="text-base">CPC</span>
@@ -290,7 +303,7 @@ const KeywordDetails = ({
               )}
             </div>
           </div>
-          <div className="w-full rounded-md border-2 border-slate-200 bg-white">
+          <div className="w-full rounded-md border-2 border-b-3 border-slate-200 bg-white">
             <div className="flex flex-row items-center gap-2 border-b-2 border-slate-200 px-4 py-3">
               <Target size={20} />
               <span className="text-base">PPC</span>
@@ -303,7 +316,7 @@ const KeywordDetails = ({
           </div>
         </div>
         {keywordData.monthlySearches ? (
-          <div className="rounded-md border-2 border-slate-200 bg-white">
+          <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white">
             <div className="flex flex-row items-center gap-2 border-b-2 border-slate-200 px-4 py-3">
               <ChartNoAxesCombined size={20} />
               <span className="text-base md:text-lg">Search Volume Trend</span>
@@ -311,7 +324,7 @@ const KeywordDetails = ({
             <div className="p-4">
               <SearchVolumeTrendChart
                 data={keywordData.monthlySearches}
-                chartType="bar"
+                chartType="area"
                 xAxisLabelType="month"
                 chartHeight={250}
               />
@@ -319,7 +332,7 @@ const KeywordDetails = ({
           </div>
         ) : null}
         {keywordData.avgBacklinksData ? (
-          <div className="rounded-md border-2 border-slate-200 bg-white">
+          <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white">
             <div className="flex flex-row items-center gap-2 border-b-2 border-slate-200 px-4 py-3">
               <LinkIcon size={20} />
               <span className="text-base md:text-lg">SERP Backlinks Data</span>
@@ -359,22 +372,29 @@ const KeywordDetails = ({
               </div>
               <div>
                 Avg. PageRank:{" "}
-                {keywordData.avgBacklinksData.pageRank
-                  ? Math.round(
-                      Math.sin(keywordData.avgBacklinksData.pageRank / 636.62) *
-                        100,
-                    )
-                  : "N/A"}
+                {avgPageRank ? (
+                  <span
+                    className="font-medium"
+                    style={{ color: getDifficultyColor(avgPageRank) }}
+                  >
+                    {avgPageRank}
+                  </span>
+                ) : (
+                  "N/A"
+                )}
               </div>
               <div>
                 Avg. DomainRank:{" "}
-                {keywordData.avgBacklinksData.domainRank
-                  ? Math.round(
-                      Math.sin(
-                        keywordData.avgBacklinksData.domainRank / 636.62,
-                      ) * 100,
-                    )
-                  : "N/A"}
+                {avgDomainRank ? (
+                  <span
+                    className="font-medium"
+                    style={{ color: getDifficultyColor(avgDomainRank) }}
+                  >
+                    {avgDomainRank}
+                  </span>
+                ) : (
+                  "N/A"
+                )}
               </div>
             </div>
           </div>

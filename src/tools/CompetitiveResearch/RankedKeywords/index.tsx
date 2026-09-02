@@ -83,11 +83,11 @@ type RankedKeywordsData = {
 const RankedKeywordsTool = ({
   searchParams,
 }: {
-  searchParams?: Promise<{
+  searchParams?: {
     target?: string;
     location_code?: string;
     language_code?: string;
-  }>;
+  };
 }) => {
   const { refreshDFSBalance } = useDFSBalance(false);
 
@@ -665,7 +665,7 @@ const RankedKeywordsTool = ({
             {typeof params.value !== "string" ? (
               <div>N/A</div>
             ) : (
-              <div className="search-intent-badge flex w-full min-w-8 items-center justify-center rounded-md border border-slate-200 bg-black/1 px-3 py-2">
+              <div className="search-intent-badge flex w-full min-w-8 items-center justify-center rounded-md border border-b-2 border-slate-200 bg-black/1 px-3 py-2">
                 {params.value === "informational" && (
                   <Tooltip
                     content={
@@ -860,20 +860,26 @@ const RankedKeywordsTool = ({
         align: "left",
         headerAlign: "left",
         renderCell: (params) => (
-          <div className="flex w-full items-center">
+          <button
+            className="flex w-full cursor-pointer items-center"
+            onClick={() => {
+              setActiveKeywordData(params.row.keyword_data);
+              openKeywordDetailsModal();
+            }}
+          >
             <SearchVolumeTrendChart
               data={params.row.keyword_data.keyword_info.monthly_searches}
               chartHeight={40}
               chartAnimation={false}
               xAxisLabelType="month"
-              chartType="bar"
+              chartType="area"
               showTooltip={false}
               showAxis={false}
               showAxisLine={false}
               showTickLine={false}
               showCartesianGrid={false}
             />
-          </div>
+          </button>
         ),
       },
       {
@@ -1020,7 +1026,7 @@ const RankedKeywordsTool = ({
             ) : (
               <Tooltip content={getDifficultyText(params.value)}>
                 <div
-                  className="relative flex h-8 w-12 items-center justify-center rounded-md border text-center font-medium"
+                  className="relative flex h-8 w-12 items-center justify-center rounded-md border border-b-2 text-center font-medium"
                   style={{
                     backgroundColor: `color-mix(in oklch, ${getDifficultyColor(params.value)}, white 90%)`,
                     color: getDifficultyColor(params.value),
@@ -1040,24 +1046,24 @@ const RankedKeywordsTool = ({
 
   useEffect(() => {
     if (searchParams) {
-      searchParams.then(({ target, location_code, language_code }) => {
-        if (target && location_code && language_code) {
-          setSelectedTarget(target);
-          setSelectedLocationKey(location_code);
-          setSelectedLanguageKey(language_code);
-          setFormInput({
-            target,
-            location_code,
-            language_code,
-          });
-        }
-      });
+      const { target, location_code, language_code } = searchParams;
+
+      if (target && location_code && language_code) {
+        setSelectedTarget(target);
+        setSelectedLocationKey(location_code);
+        setSelectedLanguageKey(language_code);
+        setFormInput({
+          target,
+          location_code,
+          language_code,
+        });
+      }
     }
   }, [searchParams]);
 
   return (
     <div className="ranked-keywords-tool relative w-full px-4 py-4 lg:px-8 lg:py-8">
-      <div className="tool-form-container relative flex w-full flex-col items-start justify-start rounded-md border-2 border-slate-200 bg-white p-5">
+      <div className="tool-form-container relative flex w-full flex-col items-start justify-start rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
         <div className="absolute top-4 right-4 flex w-fit items-center gap-2">
           <Tooltip content="Credits Cost (Uncached)">
             <Chip size="md" variant="flat">
@@ -1221,7 +1227,7 @@ const RankedKeywordsTool = ({
           formInput.location_code &&
           formInput.language_code && (
             <div className="mt-4 w-full">
-              <div className="flex w-full flex-col flex-wrap items-start gap-2 rounded-md border border-slate-200 p-3 text-sm md:w-fit md:flex-row md:items-center">
+              <div className="flex w-full flex-col flex-wrap items-start gap-2 rounded-md border border-b-2 border-slate-200 p-3 text-sm md:w-fit md:flex-row md:items-center">
                 <div className="mr-1 flex items-center gap-1 border-slate-200 text-sm font-medium text-black/80 transition">
                   Other Reports:
                 </div>
@@ -1245,7 +1251,7 @@ const RankedKeywordsTool = ({
       )}
       {!isLoading && !error && data && (
         <div
-          className="mt-4 w-full scroll-m-4 rounded-md border-2 border-slate-200 bg-white lg:mt-8 lg:scroll-m-8"
+          className="mt-4 w-full scroll-m-4 rounded-md border-2 border-b-3 border-slate-200 bg-white lg:mt-8 lg:scroll-m-8"
           id="ranked-overview-data"
         >
           <div className="flex flex-row flex-wrap items-stretch justify-between gap-3 border-b-2 border-slate-200 px-4 py-3">
@@ -1255,7 +1261,7 @@ const RankedKeywordsTool = ({
             </div>
             <div className="flex items-center gap-2">
               {isCachedData && (
-                <div className="text-small text-default-700 relative flex items-stretch gap-2 rounded-full border-2 border-slate-200 p-2">
+                <div className="text-small text-default-700 relative flex items-stretch gap-2 rounded-full border-2 border-b-3 border-slate-200 p-2">
                   <Tooltip content="Cached Data">
                     <DatabaseZapIcon size={18} />
                   </Tooltip>
@@ -1363,7 +1369,7 @@ const RankedKeywordsTool = ({
       {!isLoading && !error && data && (
         <div className="tool-results-container mt-4 flex w-full flex-col gap-8 md:gap-4 lg:mt-8 lg:flex-row">
           <div
-            className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-slate-200 bg-white lg:scroll-m-8"
+            className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-b-3 border-slate-200 bg-white lg:scroll-m-8"
             id="keywords-table"
           >
             <div className="header flex w-full items-center justify-between gap-2 border-b-2 border-slate-200 px-4 py-3 text-base md:text-lg">
@@ -1376,7 +1382,7 @@ const RankedKeywordsTool = ({
               </div>
               <div className="flex items-center gap-2">
                 {isCachedData && (
-                  <div className="text-small text-default-700 relative flex items-stretch gap-2 rounded-full border-2 border-slate-200 p-2">
+                  <div className="text-small text-default-700 relative flex items-stretch gap-2 rounded-full border-2 border-b-3 border-slate-200 p-2">
                     <Tooltip content="Cached Data">
                       <DatabaseZapIcon size={18} />
                     </Tooltip>

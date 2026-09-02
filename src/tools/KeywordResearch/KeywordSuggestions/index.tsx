@@ -99,11 +99,11 @@ type KeywordSuggestionsData = KeywordSuggestionItem[];
 const KeywordSuggestionsTool = ({
   searchParams,
 }: {
-  searchParams?: Promise<{
+  searchParams?: {
     keyword?: string;
     location_code?: string;
     language_code?: string;
-  }>;
+  };
 }) => {
   const { refreshDFSBalance } = useDFSBalance(false);
 
@@ -403,18 +403,18 @@ const KeywordSuggestionsTool = ({
 
   useEffect(() => {
     if (searchParams) {
-      searchParams.then(({ keyword, location_code, language_code }) => {
-        if (keyword && location_code && language_code) {
-          setSelectedKeyword(keyword);
-          setSelectedLocationKey(location_code);
-          setSelectedLanguageKey(language_code);
-          setFormInput({
-            keyword,
-            location_code,
-            language_code,
-          });
-        }
-      });
+      const { keyword, location_code, language_code } = searchParams;
+
+      if (keyword && location_code && language_code) {
+        setSelectedKeyword(keyword);
+        setSelectedLocationKey(location_code);
+        setSelectedLanguageKey(language_code);
+        setFormInput({
+          keyword,
+          location_code,
+          language_code,
+        });
+      }
     }
   }, [searchParams]);
 
@@ -608,7 +608,7 @@ const KeywordSuggestionsTool = ({
             {typeof params.value !== "string" ? (
               <div>N/A</div>
             ) : (
-              <div className="search-intent-badge flex w-full min-w-8 items-center justify-center rounded-md border border-slate-200 bg-black/1 px-3 py-2">
+              <div className="search-intent-badge flex w-full min-w-8 items-center justify-center rounded-md border border-b-2 border-slate-200 bg-black/1 px-3 py-2">
                 {params.value === "informational" && (
                   <Tooltip
                     content={
@@ -714,6 +714,7 @@ const KeywordSuggestionsTool = ({
         field: "volumeTrend",
         disableExport: true,
         filterable: false,
+        sortable: false,
         headerName: "Volume Trend",
         description: "Search Volume Trend",
         display: "flex",
@@ -723,20 +724,26 @@ const KeywordSuggestionsTool = ({
         align: "left",
         headerAlign: "left",
         renderCell: (params) => (
-          <div className="flex w-full items-center">
+          <button
+            className="flex w-full cursor-pointer items-center"
+            onClick={() => {
+              setActiveKeywordData(params.row);
+              openKeywordDetailsModal();
+            }}
+          >
             <SearchVolumeTrendChart
               data={params.row.monthlySearches}
               chartHeight={40}
               chartAnimation={false}
               xAxisLabelType="month"
-              chartType="bar"
+              chartType="area"
               showTooltip={false}
               showAxis={false}
               showAxisLine={false}
               showTickLine={false}
               showCartesianGrid={false}
             />
-          </div>
+          </button>
         ),
       },
       {
@@ -853,7 +860,7 @@ const KeywordSuggestionsTool = ({
             ) : (
               <Tooltip content={getDifficultyText(params.value)}>
                 <div
-                  className="relative flex h-8 w-12 items-center justify-center rounded-md border text-center font-medium"
+                  className="relative flex h-8 w-12 items-center justify-center rounded-md border border-b-2 text-center font-medium"
                   style={{
                     backgroundColor: `color-mix(in oklch, ${getDifficultyColor(params.value)}, white 90%)`,
                     color: getDifficultyColor(params.value),
@@ -873,7 +880,7 @@ const KeywordSuggestionsTool = ({
 
   return (
     <div className="keyword-suggestions-tool relative w-full px-4 py-4 lg:px-8 lg:py-8">
-      <div className="tool-form-container relative flex w-full flex-col items-start justify-start rounded-md border-2 border-slate-200 bg-white p-5">
+      <div className="tool-form-container relative flex w-full flex-col items-start justify-start rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
         <div className="absolute top-4 right-4 flex w-fit items-center gap-2">
           <Tooltip content="Credits Cost (Uncached)">
             <Chip size="md" variant="flat">
@@ -1036,7 +1043,7 @@ const KeywordSuggestionsTool = ({
           formInput.location_code &&
           formInput.language_code && (
             <div className="mt-4 w-full">
-              <div className="flex w-full flex-col flex-wrap items-start gap-2 rounded-md border border-slate-200 p-3 text-sm md:w-fit md:flex-row md:items-center">
+              <div className="flex w-full flex-col flex-wrap items-start gap-2 rounded-md border border-b-2 border-slate-200 p-3 text-sm md:w-fit md:flex-row md:items-center">
                 <div className="mr-1 flex items-center gap-1 border-slate-200 text-sm font-medium text-black/80 transition">
                   Other Reports:
                 </div>
@@ -1067,7 +1074,7 @@ const KeywordSuggestionsTool = ({
       {!isLoading && !error && data && (
         <div className="tool-results-container mt-4 flex w-full flex-col gap-8 md:gap-4 lg:mt-8 lg:flex-row">
           <div
-            className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-slate-200 bg-white lg:scroll-m-8"
+            className="tool-results-table-container h-fit w-full scroll-m-4 overflow-auto rounded-md border-2 border-b-3 border-slate-200 bg-white lg:scroll-m-8"
             id="keywords-table"
           >
             <div className="header flex w-full items-center justify-between gap-2 border-b-2 border-slate-200 px-4 py-3 text-base md:text-lg">
@@ -1080,7 +1087,7 @@ const KeywordSuggestionsTool = ({
               </div>
               <div className="flex items-center gap-2">
                 {isCachedData && (
-                  <div className="text-small text-default-700 relative flex items-stretch gap-2 rounded-full border-2 border-slate-200 p-2">
+                  <div className="text-small text-default-700 relative flex items-stretch gap-2 rounded-full border-2 border-b-3 border-slate-200 p-2">
                     <Tooltip content="Cached Data">
                       <DatabaseZapIcon size={18} />
                     </Tooltip>

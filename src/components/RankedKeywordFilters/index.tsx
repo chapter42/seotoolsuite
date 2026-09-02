@@ -55,7 +55,7 @@ const RankedKeywordFilters = ({
   const [initialValuesState, setInitialValuesState] =
     useState<RankedKeywordFiltersInitialValues>(initialValues);
   return (
-    <div className="keyword-filters flex flex-col items-start justify-start rounded-md border-2 border-slate-200">
+    <div className="keyword-filters flex flex-col items-start justify-start rounded-md border-2 border-b-3 border-slate-200">
       <div
         className={`flex w-full items-center justify-between gap-1 rounded-t-md border-slate-200 py-2 pr-2 pl-4 text-base ${filtersVisible ? "border-b-2" : ""}`}
       >
@@ -102,7 +102,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="searchVolume-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -121,7 +121,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="searchVolume-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -147,7 +147,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="kd-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -166,7 +166,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="kd-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -202,7 +202,7 @@ const RankedKeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Easy">
                   <Button
-                    className="border border-[#AADA2B] bg-transparent px-2 text-xs font-semibold text-[#AADA2B] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#AADA2B] bg-transparent px-2 text-xs font-semibold text-[#AADA2B] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -218,7 +218,7 @@ const RankedKeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Medium">
                   <Button
-                    className="border border-[#ffbe02] bg-transparent px-2 text-xs font-semibold text-[#ffbe02] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#ffbe02] bg-transparent px-2 text-xs font-semibold text-[#ffbe02] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -234,7 +234,7 @@ const RankedKeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Hard">
                   <Button
-                    className="border border-[#ef7a24] bg-transparent px-2 text-xs font-semibold text-[#ef7a24] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#ef7a24] bg-transparent px-2 text-xs font-semibold text-[#ef7a24] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -250,7 +250,7 @@ const RankedKeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Very Hard">
                   <Button
-                    className="border border-[#bd462e] bg-transparent px-2 text-xs font-semibold text-[#bd462e] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[#bd462e] bg-transparent px-2 text-xs font-semibold text-[#bd462e] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -266,7 +266,7 @@ const RankedKeywordFilters = ({
                 </Tooltip>
                 <Tooltip content="Extremely Hard">
                   <Button
-                    className="border border-[red] bg-transparent px-2 text-xs font-semibold text-[red] lg:h-auto lg:min-w-auto lg:py-1"
+                    className="border border-b-2 border-[red] bg-transparent px-2 text-xs font-semibold text-[red] lg:h-auto lg:min-w-auto lg:py-1"
                     size="sm"
                     variant="flat"
                     onPress={() => {
@@ -293,7 +293,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="cpc-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   startContent={
                     <div className="pointer-events-none flex items-center">
@@ -317,7 +317,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="cpc-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   startContent={
                     <div className="pointer-events-none flex items-center">
@@ -348,7 +348,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="ppc-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -367,7 +367,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="ppc-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -397,7 +397,7 @@ const RankedKeywordFilters = ({
                   name="includeKeyword"
                   variant="bordered"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   radius="sm"
                   type="text"
@@ -422,7 +422,7 @@ const RankedKeywordFilters = ({
                   name="excludeKeyword"
                   variant="bordered"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   radius="sm"
                   type="text"
@@ -448,7 +448,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="rank-pos-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -467,7 +467,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="rank-pos-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -493,7 +493,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="est-traffic-min"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"
@@ -512,7 +512,7 @@ const RankedKeywordFilters = ({
                 <NumberInput
                   name="est-traffic-max"
                   classNames={{
-                    inputWrapper: "shadow-none",
+                    inputWrapper: "shadow-none border-b-3",
                   }}
                   variant="bordered"
                   type="number"

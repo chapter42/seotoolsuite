@@ -1,5 +1,5 @@
-import BulkDRCheckerTool from "@/tools/BacklinkResearch/BulkDRChecker/";
 import { Metadata } from "next";
+import BulkDRCheckerToolClient from "./Client";
 
 export const metadata: Metadata = {
   title: "Bulk Ahrefs DR Checker (Free) | SEOToolSuite",
@@ -18,9 +18,5 @@ export const metadata: Metadata = {
 };
 
 export default function BulkDRCheckerPage() {
-  return (
-    <div className="bulk-dr-checker-page">
-      <BulkDRCheckerTool />
-    </div>
-  );
+  return <BulkDRCheckerToolClient />;
 }

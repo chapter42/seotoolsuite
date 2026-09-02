@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import TrafficOverviewTool from "@/tools/CompetitiveResearch/TrafficOverview";
+import TrafficOverviewToolClient from "./Client";
 
 export const metadata: Metadata = {
   title: "Traffic Overview | SEOToolSuite",
@@ -17,18 +17,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function TrafficOverviewPage({
+export default async function TrafficOverviewPage({
   searchParams,
 }: {
-  searchParams?: Promise<{
+  searchParams: Promise<{
     target?: string;
     location_code?: string;
     language_code?: string;
   }>;
 }) {
-  return (
-    <div className="traffic-overview-page">
-      <TrafficOverviewTool searchParams={searchParams} />
-    </div>
-  );
+  const searchParameters = await searchParams;
+
+  return <TrafficOverviewToolClient searchParams={searchParameters} />;
 }

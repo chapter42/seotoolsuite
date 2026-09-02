@@ -45,7 +45,7 @@ export default function KeywordAutocompleteFeaturePage() {
       {/* Hero Section */}
       <section className="hero w-full border-b-2 border-slate-200 bg-[url('/assets/images/papyrus.png')] bg-repeat px-4 lg:px-0">
         <div className="mx-auto flex w-full max-w-350 flex-col items-center pt-8 lg:pt-14">
-          <div className="flex items-center gap-2 rounded-full border-2 border-sky-950/20 bg-white/80 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-950 uppercase backdrop-blur-xs md:text-sm">
+          <div className="flex items-center gap-2 rounded-full border-2 border-b-3 border-sky-950/20 bg-white/80 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-950 uppercase backdrop-blur-xs md:text-sm">
             <TelescopeIcon size={18} className="text-sky-950" />
             KEYWORD RESEARCH
           </div>
@@ -67,24 +67,32 @@ export default function KeywordAutocompleteFeaturePage() {
 
         {/* Feature Badges */}
         <div className="mt-5 flex flex-wrap items-center justify-center gap-2 px-2 sm:px-4">
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-emerald-950/10">
+              <GiftIcon size={20} className="text-sky-950" />
+            </div>
+            <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
+              Free To Use (No API Needed)
+            </span>
+          </div>
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <SearchIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               Real-Time Google Autocomplete
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <LightbulbIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               Alphabetical & Question Expansion
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <ZapIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
@@ -97,7 +105,7 @@ export default function KeywordAutocompleteFeaturePage() {
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/tool/keyword-research/autocomplete"
-            className="flex items-center gap-2 rounded-md border-2 border-sky-950 bg-sky-950 px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
+            className="flex items-center gap-2 rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
           >
             Access Keyword Autocomplete
           </Link>
@@ -149,7 +157,7 @@ export default function KeywordAutocompleteFeaturePage() {
 
           <div className="mt-8 grid w-full grid-cols-1 items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {/* Feature 1 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -171,7 +179,7 @@ export default function KeywordAutocompleteFeaturePage() {
             </div>
 
             {/* Feature 2 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -192,7 +200,7 @@ export default function KeywordAutocompleteFeaturePage() {
             </div>
 
             {/* Feature 3 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -214,7 +222,7 @@ export default function KeywordAutocompleteFeaturePage() {
             </div>
 
             {/* Feature 4 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -236,7 +244,7 @@ export default function KeywordAutocompleteFeaturePage() {
             </div>
 
             {/* Feature 5 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -257,7 +265,7 @@ export default function KeywordAutocompleteFeaturePage() {
             </div>
 
             {/* Feature 6 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -291,7 +299,7 @@ export default function KeywordAutocompleteFeaturePage() {
           </p>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <GiftIcon size={28} className="shrink-0 text-sky-950" />
                 <h3 className="text-lg font-semibold">100% Free Tool</h3>
@@ -302,7 +310,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <InfinityIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Unlimited Queries</h3>
@@ -313,7 +321,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <ZapIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Blazing Speed</h3>
@@ -324,7 +332,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <ScaleIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">100% Open Source</h3>
@@ -335,7 +343,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <LockIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Private & Secure</h3>
@@ -346,7 +354,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <SearchIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Real Search Intent</h3>
@@ -371,7 +379,7 @@ export default function KeywordAutocompleteFeaturePage() {
           </p>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-6 md:grid-cols-3">
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 1
               </span>
@@ -383,7 +391,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 2
               </span>
@@ -396,7 +404,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 3
               </span>
@@ -422,7 +430,7 @@ export default function KeywordAutocompleteFeaturePage() {
           </div>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Is Keyword Autocomplete really 100% free?
               </h3>
@@ -433,7 +441,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Where do these search suggestions come from?
               </h3>
@@ -443,7 +451,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Why are long-tail keywords important for SEO?
               </h3>
@@ -454,7 +462,7 @@ export default function KeywordAutocompleteFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Can I export the results to CSV?
               </h3>
@@ -487,7 +495,7 @@ export default function KeywordAutocompleteFeaturePage() {
             </Link>
             <Link
               href="/tools"
-              className="flex items-center gap-2 rounded-md border-2 border-slate-300 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:bg-white/10 active:scale-95"
+              className="flex items-center gap-2 rounded-md border-2 border-b-3 border-slate-300 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:bg-white/10 active:scale-95"
             >
               Explore All Tools
             </Link>

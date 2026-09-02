@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import KeywordAutocompleteTool from "@/tools/KeywordResearch/KeywordAutocomplete/";
+import KeywordAutocompleteToolClient from "./Client";
 
 export const metadata: Metadata = {
   title: "Keyword Autocomplete (Free) | SEOToolSuite",
@@ -17,18 +17,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function KeywordAutocompletePage({
+export default async function KeywordAutocompletePage({
   searchParams,
 }: {
-  searchParams?: Promise<{
+  searchParams: Promise<{
     keyword?: string;
     location_code?: string;
     language_code?: string;
   }>;
 }) {
-  return (
-    <div className="keyword-autocomplete-page">
-      <KeywordAutocompleteTool searchParams={searchParams} />
-    </div>
-  );
+  const searchParameters = await searchParams;
+
+  return <KeywordAutocompleteToolClient searchParams={searchParameters} />;
 }

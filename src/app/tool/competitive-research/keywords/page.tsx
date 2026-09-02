@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import RankedKeywordsTool from "@/tools/CompetitiveResearch/RankedKeywords";
+import RankedKeywordsToolClient from "./Client";
 
 export const metadata: Metadata = {
   title: "Ranked Keywords | SEOToolSuite",
@@ -17,18 +17,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RankedKeywordsPage({
+export default async function RankedKeywordsPage({
   searchParams,
 }: {
-  searchParams?: Promise<{
+  searchParams: Promise<{
     target?: string;
     location_code?: string;
     language_code?: string;
   }>;
 }) {
-  return (
-    <div className="ranked-keywords-page">
-      <RankedKeywordsTool searchParams={searchParams} />
-    </div>
-  );
+  const searchParameters = await searchParams;
+
+  return <RankedKeywordsToolClient searchParams={searchParameters} />;
 }

@@ -236,7 +236,7 @@ function SettingsComponent() {
       <h1 className="mb-4 w-fit text-2xl font-semibold text-sky-950 md:mb-8 md:text-4xl">
         Settings
       </h1>
-      <div className="w-full rounded-md border-2 border-slate-200 bg-white">
+      <div className="w-full rounded-md border-2 border-b-3 border-slate-200 bg-white">
         <div className="flex flex-col">
           <div
             className={`flex items-center gap-2 border-b-2 border-slate-200 px-4 py-3`}
@@ -440,7 +440,7 @@ function SettingsComponent() {
           </div>
         </div>
       </div>
-      <div className="mt-4 w-full rounded-md border-2 border-slate-200 bg-white">
+      <div className="mt-4 w-full rounded-md border-2 border-b-3 border-slate-200 bg-white">
         <div className="flex flex-col">
           <div className="flex items-center gap-2 border-b-2 border-slate-200 px-4 py-3">
             <div className="flex w-full flex-wrap items-center justify-between gap-4">
@@ -452,13 +452,13 @@ function SettingsComponent() {
                 <Tooltip content="Tutorial">
                   <button
                     onClick={() => setDFSTutorialShown(!dfsTutorialShown)}
-                    className={`cursor-pointer rounded-md border-2 border-slate-200 bg-white p-2 transition hover:bg-slate-50 active:scale-95 active:duration-75 ${dfsTutorialShown ? "bg-slate-200!" : ""}`}
+                    className={`cursor-pointer rounded-md border-2 border-b-3 border-slate-200 bg-white p-2 transition hover:bg-slate-50 active:scale-95 active:duration-75 ${dfsTutorialShown ? "bg-slate-200!" : ""}`}
                   >
                     <LifeBuoyIcon size={20} />
                   </button>
                 </Tooltip>
                 <Tooltip content="Your credentials are stored securely on your browser.">
-                  <div className="flex items-center gap-1 rounded-md border border-green-500 bg-green-50 px-2 py-1 font-medium text-green-600">
+                  <div className="flex items-center gap-1 rounded-md border border-b-2 border-green-500 bg-green-50 px-2 py-1 font-medium text-green-600">
                     <LockIcon size={16} />
                     Secured
                   </div>
@@ -468,7 +468,7 @@ function SettingsComponent() {
           </div>
           <div className="w-full p-4">
             <div
-              className={`mb-6 w-full rounded-md border-2 border-slate-200 bg-slate-50/50 p-4 ${!dfsTutorialShown ? "hidden" : ""}`}
+              className={`mb-6 w-full rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-4 ${!dfsTutorialShown ? "hidden" : ""}`}
             >
               <h3 className="flex items-center gap-1 text-lg font-medium md:text-xl">
                 <LifeBuoyIcon size={20} />
@@ -570,7 +570,7 @@ function SettingsComponent() {
               </Link>
             </div>
             <Tooltip content="Turn on the API sandbox mode to use free, dummy data. Ideal for testing and development.">
-              <div className="mt-6 flex w-fit items-stretch rounded-md border-2 border-slate-200">
+              <div className="mt-6 flex w-fit items-stretch rounded-md border-2 border-b-3 border-slate-200">
                 <div className="border-r-2 border-slate-200 p-2">
                   <BoxIcon size={22} />
                 </div>
@@ -588,7 +588,7 @@ function SettingsComponent() {
           </div>
         </div>
       </div>
-      <div className="mt-4 w-full rounded-md border-2 border-slate-200 bg-white">
+      <div className="mt-4 w-full rounded-md border-2 border-b-3 border-slate-200 bg-white">
         <div className="flex flex-col">
           <div
             className={`flex items-center gap-2 border-slate-200 px-4 py-3 ${cachingEnabled ? "border-b-2" : ""}`}
@@ -605,13 +605,13 @@ function SettingsComponent() {
                       handleCachingEnabledChange(true);
                       setUpstashTutorialShown(!upstashTutorialShown);
                     }}
-                    className={`cursor-pointer rounded-md border-2 border-slate-200 bg-white p-2 transition hover:bg-slate-50 active:scale-95 active:duration-75 ${upstashTutorialShown ? "bg-slate-200!" : ""}`}
+                    className={`cursor-pointer rounded-md border-2 border-b-3 border-slate-200 bg-white p-2 transition hover:bg-slate-50 active:scale-95 active:duration-75 ${upstashTutorialShown ? "bg-slate-200!" : ""}`}
                   >
                     <LifeBuoyIcon size={20} />
                   </button>
                 </Tooltip>
                 <Tooltip content="Your credentials are stored securely on your browser.">
-                  <div className="flex items-center gap-1 rounded-md border border-green-500 bg-green-50 px-2 py-1 font-medium text-green-600">
+                  <div className="flex items-center gap-1 rounded-md border border-b-2 border-green-500 bg-green-50 px-2 py-1 font-medium text-green-600">
                     <LockIcon size={16} />
                     Secured
                   </div>
@@ -626,7 +626,7 @@ function SettingsComponent() {
           </div>
           <div className={`w-full p-4 ${!cachingEnabled ? "hidden" : ""}`}>
             <div
-              className={`mb-6 w-full rounded-md border-2 border-slate-200 bg-slate-50/50 p-4 ${!upstashTutorialShown ? "hidden" : ""}`}
+              className={`mb-6 w-full rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-4 ${!upstashTutorialShown ? "hidden" : ""}`}
             >
               <h3 className="flex items-center gap-1 text-lg font-medium md:text-xl">
                 <LifeBuoyIcon size={20} />

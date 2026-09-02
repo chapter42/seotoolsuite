@@ -1,5 +1,13 @@
 # SEOToolSuite Changelog
 
+## v6.1.0
+
+- Major UI changes and improvements.
+- Use area chart for search volume trend chart instead of bar chart.
+- Fix fast refresh not working on tool pages.
+- Added example env file for self-deployment.
+- Updated packages.
+
 ## v6.0.0
 
 - Added a new free "Bulk DR Checker" tool. Check Ahrefs DR for multiple websites at once for free.

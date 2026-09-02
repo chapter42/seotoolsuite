@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import KeywordOverviewTool from "@/tools/KeywordResearch/KeywordOverview";
+import KeywordOverviewToolClient from "./Client";
 
 export const metadata: Metadata = {
   title: "Keyword Overview | SEOToolSuite",
@@ -21,18 +21,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function KeywordOverviewPage({
+export default async function KeywordOverviewPage({
   searchParams,
 }: {
-  searchParams?: Promise<{
+  searchParams: Promise<{
     keyword?: string;
     location_code?: string;
     language_code?: string;
   }>;
 }) {
-  return (
-    <div className="keyword-overview-page">
-      <KeywordOverviewTool searchParams={searchParams} />
-    </div>
-  );
+  const searchParameters = await searchParams;
+
+  return <KeywordOverviewToolClient searchParams={searchParameters} />;
 }

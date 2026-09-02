@@ -44,7 +44,7 @@ export default function BulkDRCheckerFeaturePage() {
       {/* Hero Section */}
       <section className="hero w-full border-b-2 border-slate-200 bg-[url('/assets/images/papyrus.png')] bg-repeat px-4 lg:px-0">
         <div className="mx-auto flex w-full max-w-350 flex-col items-center pt-8 lg:pt-14">
-          <div className="flex items-center gap-2 rounded-full border-2 border-sky-950/20 bg-white/80 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-950 uppercase backdrop-blur-xs md:text-sm">
+          <div className="flex items-center gap-2 rounded-full border-2 border-b-3 border-sky-950/20 bg-white/80 px-4 py-1.5 text-xs font-semibold tracking-wider text-sky-950 uppercase backdrop-blur-xs md:text-sm">
             <LinkIcon size={18} className="text-sky-950" />
             BACKLINK RESEARCH
           </div>
@@ -63,32 +63,32 @@ export default function BulkDRCheckerFeaturePage() {
 
         {/* Feature Badges */}
         <div className="mt-5 flex flex-wrap items-center justify-center gap-2 px-2 sm:px-4">
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-emerald-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-emerald-950/10">
               <GiftIcon size={20} className="text-sky-950" />
             </div>
-            <span className="text-xs font-semibold text-sky-950 sm:text-sm md:text-base">
+            <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               Free to Use (No API Needed)
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <LayersIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               Bulk Multi-Domain Batch Queries
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <ShieldCheckIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
               Ahrefs Domain Rating (DR)
             </span>
           </div>
-          <div className="flex items-center gap-2 rounded-md border-2 border-slate-200 bg-white pr-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-l-md bg-sky-950/10">
+          <div className="flex items-center gap-2 overflow-hidden rounded-md border-2 border-b-3 border-slate-200 bg-white pr-3">
+            <div className="flex h-10 w-10 items-center justify-center bg-sky-950/10">
               <FileSpreadsheetIcon size={20} className="text-sky-950" />
             </div>
             <span className="text-xs font-medium text-sky-950 sm:text-sm md:text-base">
@@ -101,7 +101,7 @@ export default function BulkDRCheckerFeaturePage() {
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/tool/backlink-research/bulk-dr-checker"
-            className="flex items-center gap-2 rounded-md border-2 border-sky-950 bg-sky-950 px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
+            className="flex items-center gap-2 rounded-md border-2 border-b-3 border-black/80 bg-sky-950 px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105 active:scale-95 lg:text-base"
           >
             Access Bulk DR Checker
           </Link>
@@ -153,7 +153,7 @@ export default function BulkDRCheckerFeaturePage() {
 
           <div className="mt-8 grid w-full grid-cols-1 items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {/* Feature 1 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -174,7 +174,7 @@ export default function BulkDRCheckerFeaturePage() {
             </div>
 
             {/* Feature 2 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -195,7 +195,7 @@ export default function BulkDRCheckerFeaturePage() {
             </div>
 
             {/* Feature 3 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -216,7 +216,7 @@ export default function BulkDRCheckerFeaturePage() {
             </div>
 
             {/* Feature 4 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -237,7 +237,7 @@ export default function BulkDRCheckerFeaturePage() {
             </div>
 
             {/* Feature 5 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -258,7 +258,7 @@ export default function BulkDRCheckerFeaturePage() {
             </div>
 
             {/* Feature 6 */}
-            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-slate-200 p-5 transition hover:bg-slate-100">
+            <div className="flex w-full flex-col items-start justify-between rounded-md border-2 border-b-3 border-slate-200 p-5 transition hover:bg-slate-100">
               <div>
                 <div className="flex items-center gap-3 text-sky-950">
                   <div className="rounded-md bg-sky-950 p-2.5 text-white">
@@ -292,7 +292,7 @@ export default function BulkDRCheckerFeaturePage() {
           </p>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <GiftIcon size={28} className="shrink-0 text-sky-950" />
                 <h3 className="text-lg font-semibold">100% Free Tool</h3>
@@ -303,7 +303,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <ShieldCheckIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Ahrefs DR Metrics</h3>
@@ -314,7 +314,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <InfinityIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Bulk Querying</h3>
@@ -325,7 +325,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <ScaleIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">100% Open Source</h3>
@@ -336,7 +336,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <LockIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Secured</h3>
@@ -347,7 +347,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="flex flex-col gap-3 rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <div className="flex items-center gap-2.5 text-sky-950">
                 <ZapIcon size={28} className="shrink-0" />
                 <h3 className="text-lg font-semibold">Blazing Speed</h3>
@@ -372,7 +372,7 @@ export default function BulkDRCheckerFeaturePage() {
           </p>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-6 md:grid-cols-3">
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 1
               </span>
@@ -385,7 +385,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 2
               </span>
@@ -398,7 +398,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="relative flex flex-col items-start rounded-md border-2 border-slate-200 bg-slate-50/50 p-6">
+            <div className="relative flex flex-col items-start rounded-md border-2 border-b-3 border-slate-200 bg-slate-50/50 p-6">
               <span className="flex h-9 w-9 items-center justify-center rounded-md bg-sky-950 text-base font-bold text-white">
                 3
               </span>
@@ -424,7 +424,7 @@ export default function BulkDRCheckerFeaturePage() {
           </div>
 
           <div className="mt-8 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Is Bulk DR Checker really 100% free?
               </h3>
@@ -434,7 +434,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Where does the Domain Rating metric come from?
               </h3>
@@ -444,7 +444,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 How many domains can I check at once?
               </h3>
@@ -454,7 +454,7 @@ export default function BulkDRCheckerFeaturePage() {
               </p>
             </div>
 
-            <div className="rounded-md border-2 border-slate-200 bg-white p-5">
+            <div className="rounded-md border-2 border-b-3 border-slate-200 bg-white p-5">
               <h3 className="text-base font-semibold text-sky-950 lg:text-lg">
                 Can I export the batch DR results to CSV?
               </h3>
@@ -487,7 +487,7 @@ export default function BulkDRCheckerFeaturePage() {
             </Link>
             <Link
               href="/tools"
-              className="flex items-center gap-2 rounded-md border-2 border-slate-300 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:bg-white/10 active:scale-95"
+              className="flex items-center gap-2 rounded-md border-2 border-b-3 border-slate-300 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:scale-105 hover:bg-white/10 active:scale-95"
             >
               Explore All Tools
             </Link>

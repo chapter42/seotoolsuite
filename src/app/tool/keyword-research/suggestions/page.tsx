@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import KeywordSuggestionsTool from "@/tools/KeywordResearch/KeywordSuggestions";
+import KeywordSuggestionsToolClient from "./Client";
 
 export const metadata: Metadata = {
   title: "Keyword Suggestions | SEOToolSuite",
@@ -17,18 +17,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function KeywordSuggestionsPage({
+export default async function KeywordSuggestionsPage({
   searchParams,
 }: {
-  searchParams?: Promise<{
+  searchParams: Promise<{
     keyword?: string;
     location_code?: string;
     language_code?: string;
   }>;
 }) {
-  return (
-    <div className="keyword-overview-page">
-      <KeywordSuggestionsTool searchParams={searchParams} />
-    </div>
-  );
+  const searchParameters = await searchParams;
+
+  return <KeywordSuggestionsToolClient searchParams={searchParameters} />;
 }
