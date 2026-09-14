@@ -121,7 +121,7 @@ export default function TrafficOverviewFeaturePage() {
           <Image
             src="/assets/images/traffic-overview-screenshot.png"
             alt="Traffic Overview"
-            className="w-full rounded-md border-2 border-sky-950/10 transition duration-2500 ease-linear group-hover:translate-y-[calc(-100%+248px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+248px)] lg:group-hover:translate-y-[calc(-100%+484px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+484px)]"
+            className="w-full rounded-md border-2 border-sky-950/10 transition duration-4500 ease-linear group-hover:translate-y-[calc(-100%+248px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+248px)] lg:group-hover:translate-y-[calc(-100%+484px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+484px)]"
             width={1200}
             height={1164}
             quality={100}

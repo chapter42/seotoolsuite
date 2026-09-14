@@ -3,6 +3,7 @@
 import {
   BinocularsIcon,
   BookOpenTextIcon,
+  FaceSlightlySmilingPlusIcon,
   LinkIcon,
   LoaderPinwheelIcon,
   MenuIcon,
@@ -148,26 +149,19 @@ const Sidebar = () => {
           <Tooltip content="Settings">
             <Link
               href="/account/settings"
-              className={`flex items-center gap-1 rounded-md border-2 border-slate-200 px-2 py-2 text-black/80 transition hover:bg-slate-100 active:scale-95 active:duration-75 ${isSettingsPageActive ? "bg-slate-100!" : ""}`}
+              className={`flex items-center gap-1 rounded-md border-2 border-b-3 border-slate-200 px-2 py-2 text-black/80 transition hover:bg-slate-100 active:scale-95 active:duration-75 ${isSettingsPageActive ? "bg-slate-100!" : ""}`}
             >
               <SettingsIcon size={24} />
             </Link>
           </Tooltip>
-          <Tooltip content="Discord Server">
+          <Tooltip content="Feedback">
             <Link
-              href="https://discord.gg/Wt4RN4Xy8n"
+              href="https://tally.so/r/rjeJlv"
               rel="nofollow"
               target="_blank"
-              className={`flex items-center gap-1 rounded-md border-2 border-slate-200 px-2 py-2 text-black/80 transition hover:bg-slate-100 active:scale-95 active:duration-75`}
+              className={`flex items-center gap-1 rounded-md border-2 border-b-3 border-slate-200 px-2 py-2 text-black/80 transition hover:bg-slate-100 active:scale-95 active:duration-75`}
             >
-              <Image
-                src="/assets/images/discord-icon.svg"
-                width={20}
-                height={20}
-                quality={100}
-                alt="Discord"
-                className="w-5"
-              />
+              <FaceSlightlySmilingPlusIcon size={24} />
             </Link>
           </Tooltip>
         </div>

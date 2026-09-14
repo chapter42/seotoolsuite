@@ -1,5 +1,12 @@
 # SEOToolSuite Changelog
 
+## v6.2.0
+
+- Improved the styling of the "DR" column in the "Bulk DR Checker" tool.
+- Replaced the "Discord" link with a "Feedback" link in the header.
+- Minor UI improvements and fixes.
+- Updated packages.
+
 ## v6.1.0
 
 - Major UI changes and improvements.

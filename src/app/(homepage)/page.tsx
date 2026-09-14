@@ -341,7 +341,7 @@ export default function HomePage() {
               <Image
                 src="/assets/images/keyword-overview-screenshot.png"
                 alt="Keyword Overview Tool"
-                className="w-full rounded-md border-2 border-sky-950/10 transition duration-1000 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-1500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
                 width={1200}
                 height={1164}
                 quality={100}
@@ -405,7 +405,7 @@ export default function HomePage() {
               <Image
                 src="/assets/images/keyword-suggestions-screenshot.png"
                 alt="Keyword Suggestions Tool"
-                className="w-full rounded-md border-2 border-sky-950/10 transition duration-1500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-3000 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
                 width={1200}
                 height={1164}
                 quality={100}
@@ -468,7 +468,7 @@ export default function HomePage() {
               <Image
                 src="/assets/images/keyword-autocomplete-screenshot.png"
                 alt="Keyword Autocomplete Tool"
-                className="w-full rounded-md border-2 border-sky-950/10 transition duration-1500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-2500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
                 width={1200}
                 height={1164}
                 quality={100}
@@ -542,7 +542,7 @@ export default function HomePage() {
               <Image
                 src="/assets/images/traffic-overview-screenshot.png"
                 alt="Traffic Overview Tool"
-                className="w-full rounded-md border-2 border-sky-950/10 transition duration-2500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-3000 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
                 width={1200}
                 height={1164}
                 quality={100}
@@ -606,7 +606,7 @@ export default function HomePage() {
               <Image
                 src="/assets/images/ranked-keywords-screenshot.png"
                 alt="Ranked Keywords Tool"
-                className="w-full rounded-md border-2 border-sky-950/10 transition duration-2500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
+                className="w-full rounded-md border-2 border-sky-950/10 transition duration-3500 ease-linear group-hover:translate-y-[calc(-100%+168px)] group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+168px)] lg:group-hover:translate-y-[calc(-100%+368px)] lg:group-[:has(.tool-card-arrow:focus)]:translate-y-[calc(-100%+368px)]"
                 width={1200}
                 height={1164}
                 quality={100}

@@ -159,26 +159,31 @@ const BulkDRCheckerTool = () => {
       {
         field: "domainRating",
         display: "flex",
+        flex: 1,
         headerName: "DR",
         description: "Ahrefs Domain Rating",
         type: "number",
-        align: "left",
+        align: "center",
         headerAlign: "left",
-        width: 200,
+        minWidth: 64,
+        maxWidth: 80,
+        resizable: false,
         renderCell: (params) => (
           <>
-            {typeof params.value === "number" ? (
-              <div className="flex w-full flex-col gap-1">
-                <span>{params.value}</span>
-                <div className="h-2 w-full overflow-hidden rounded-full bg-slate-200">
+            {typeof params.value !== "number" ? (
+              <div className="w-full px-2.5 text-center">N/A</div>
+            ) : (
+              <div className="relative flex h-9 w-12 flex-col items-center justify-center rounded-md border border-b-2 border-sky-950/50 bg-sky-950/10 text-center font-medium text-sky-950">
+                <span className="relative z-20">{params.value}</span>
+                <div className="mx-auto w-8 overflow-hidden rounded-full bg-sky-950/20">
                   <div
-                    className="scale-x-anim h-2 bg-sky-950"
-                    style={{ width: `${params.value}%` }}
+                    className="scale-x-anim h-1 bg-sky-950"
+                    style={{
+                      width: `${params.value}%`,
+                    }}
                   ></div>
                 </div>
               </div>
-            ) : (
-              <div className="w-full text-center">N/A</div>
             )}
           </>
         ),
